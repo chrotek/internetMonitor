@@ -1,0 +1,11 @@
+[Unit]
+Description=internetMonitor
+After=network.target
+
+[Service]
+WorkingDirectory=/usr/local/sbin/internetMonitor
+
+ExecStart=bash internetMonitor.sh
+
+[Install]
+WantedBy=multi-user.target
